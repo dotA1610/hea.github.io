@@ -228,8 +228,8 @@ footer a:hover {
     header {
         padding: 10px 0 20px 0; /* add some bottom space */
         background-color: #004c99; /* ensure color stays visible */
-        position: relative;
-        top: auto;
+        /*position: relative;
+        top: auto;*/
     }
 
     header .container {
@@ -273,6 +273,7 @@ footer a:hover {
         margin-bottom: 10px;
     }
 }
+
 
 
 
