@@ -1,9 +1,9 @@
-/* --- Global Styles --- */
+/* --- Global Styles for Entire --- */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f7f6; /* Light gray background */
+    background-color: #f4f7f6; /* background - Light gray */
     color: #333;
     line-height: 1.6;
     display: flex;
@@ -19,9 +19,9 @@ body {
 }
 
 
-/* --- Header and Navigation --- */
+/* --- Header and Nav --- */
 header {
-    background-color: #004c99; /* Primary Blue */
+    background-color: #004c99; /* header color - Primary Blue */
     color: white;
     padding: 20px 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -32,7 +32,7 @@ header {
 }
 header .container {
     display: flex;
-    justify-content: space-between; /* push logo left, nav right */
+    justify-content: space-between; /* For auto align of nav buttons - push logo left, nav right */
     align-items: center;
     width: 100%;
     max-width: none;
@@ -95,7 +95,7 @@ nav ul li a {
 
 nav ul li a:hover,
 nav ul li a.active {
-    background-color: #003366; /* Darker Blue on hover/active */
+    background-color: #003366; /* Darker Blue on hover/active - for cursor */
 }
 
 /* --- Main Content Layout --- */
@@ -113,7 +113,7 @@ section {
 }
 
 h2 {
-    color: #004c99; /* Primary Blue for headings */
+    color: #004c99; /* Primary Blue - for headings */
     border-bottom: 2px solid #004c99;
     padding-bottom: 5px;
     margin-top: 0;
@@ -134,7 +134,7 @@ form textarea {
     margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    box-sizing: border-box; /* Include padding/border in element's total width/height */
+    box-sizing: border-box; /* Include padding/border in object total width/height */
 }
 
 form textarea {
@@ -143,7 +143,7 @@ form textarea {
 }
 
 form button {
-    background-color: #ff6600; /* Accent Orange */
+    background-color: #ff6600; /* Form button color - Accent Orange */
     color: white;
     padding: 10px 20px;
     border: none;
@@ -154,7 +154,7 @@ form button {
 }
 
 form button:hover {
-    background-color: #cc5200; /* Darker orange on hover */
+    background-color: #cc5200; /* Darker orange on hover - for cursor */
 }
 
 section a {
@@ -189,14 +189,14 @@ section a:hover {
 
 /* --- Footer --- */
 footer {
-    background-color: #333; /* Dark gray */
+    background-color: #333; /* color - Dark gray */
     color: white;
     text-align: center;
     padding: 20px 0;
 }
 
 footer a {
-    color: #ff6600; /* Orange links in footer */
+    color: #ff6600; /* Orange links in footer - for Contact Us */
     text-decoration: none;
     margin: 0 5px;
 }
@@ -213,12 +213,12 @@ footer a:hover {
 }
 
 
-/* --- MOBILE RESPONSIVENESS (Screens 768px and smaller) --- */
+/* --- MOBILE RESPONSIVENESS (Screens 768px and smaller) - <IS WORKING> experiment for mobile device, sticky header removed --- */
 @media (max-width: 768px) {
     
- /* 1. Stack Header Elements */
+ /* 1. Stack Header Elements/Parts */
     /*header .container {
-        flex-direction: column;  Stack the logo (h1) and navigation (nav) vertically 
+        flex-direction: column;  comment out - Stack the logo (h1) and navigation (nav) vertically  
         align-items: flex-start;
         padding: 10px 5%;
         width: 100%;
@@ -226,8 +226,8 @@ footer a:hover {
     }*/
 
     header {
-        padding: 10px 0 20px 0; /* add some bottom space */
-        background-color: #004c99; /* ensure color stays visible */
+        padding: 10px 0 20px 0; /* add some bottom space - for alignment */
+        background-color: #004c99; /* ensure color stays visible - extra part don't remove */
         /*position: relative;
         top: auto;*/
     }
@@ -238,7 +238,8 @@ footer a:hover {
         width: 100%;
         padding: 10px 5%;
     }
-    
+
+/* 2. Navigation Button Alignment */
     nav ul {
         flex-direction: column;
         align-items: flex-start;
@@ -261,7 +262,7 @@ footer a:hover {
         padding: 20px 0;
     }
     
-    /* 4. University Card Layout Change (If you use this) */
+    /* 4. University Card/Tag Layout Change (If you use this) */
     .university-card {
         flex-direction: column;
         align-items: center;
@@ -273,6 +274,7 @@ footer a:hover {
         margin-bottom: 10px;
     }
 }
+
 
 
 
