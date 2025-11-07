@@ -212,6 +212,43 @@ footer a:hover {
     vertical-align: middle;
 }
 
+/* --- Side-by-Side Layout --- */
+.side-by-side {
+    display: flex;
+    align-items: center; 
+    gap: 20px;          
+    flex-wrap: wrap;     
+}
+
+.side-by-side img {
+    flex: 1;          /* image as the first block */ 
+    max-width: 100%;
+    height: auto;
+    display: block;      
+}
+
+.side-by-side-content {
+    flex: 2;         /* Text as the second block */
+}
+
+.side-by-side2 {
+    display: flex;
+    align-items: center; 
+    gap: 20px;          
+    flex-wrap: wrap;     
+}
+
+.side-by-side2 img {
+    flex: 2;          /* image as the second block */ 
+    max-width: 100%;
+    height: auto;
+    display: block;      
+}
+
+.side-by-side-content2 {
+    flex: 1;         /* Text as the first block */
+}
+
 
 /* --- MOBILE RESPONSIVENESS (Screens 768px and smaller) - <IS WORKING> experiment for mobile device, sticky header removed --- */
 @media (max-width: 768px) {
@@ -273,7 +310,14 @@ footer a:hover {
         margin-right: 0;
         margin-bottom: 10px;
     }
+    
+    /* 5. Side-by-Side Layout */
+    .side-by-side {
+        flex-direction: column; /* Stacks image on top of text on mobile */
+    }
+    
 }
+
 
 
 
