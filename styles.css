@@ -312,11 +312,17 @@ footer a:hover {
     }
     
     /* 5. Side-by-Side Layout */
-    .side-by-side {
+    .side-by-side, .side-by-side2 {
         flex-direction: column; /* Stacks image on top of text on mobile */
     }
-    
+
+    .side-by-side p, .side-by-side2 p,
+    .side-by-side-content, .side-by-side-content2 {
+        width: 100%; /* Make everything full width on mobile */
+        max-width: none;
+    }
 }
+
 
 
 
