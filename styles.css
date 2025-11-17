@@ -212,6 +212,18 @@ footer a:hover {
     vertical-align: middle;
 }
 
+.logo-top-for-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-top-for-title .logo {
+    width: 45px;
+    height: auto;
+}
+
+
 /* --- Side-by-Side Layout --- */
 .side-by-side {
     display: flex;
@@ -322,6 +334,7 @@ footer a:hover {
         max-width: none;
     }
 }
+
 
 
 
