@@ -261,6 +261,23 @@ footer a:hover {
     flex: 1;         /* Text as the first block */
 }
 
+.facilities {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.fac-column {
+    flex: 50%;
+    max-width: 50%;
+    padding: 0 4px;
+}
+
+.fac-column img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
 
 /* --- MOBILE RESPONSIVENESS (Screens 768px and smaller) - <IS WORKING> experiment for mobile device, sticky header removed --- */
 @media (max-width: 768px) {
