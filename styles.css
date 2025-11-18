@@ -232,6 +232,14 @@ footer a:hover {
     flex-wrap: wrap;     
 }
 
+.side {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;          
+    flex-wrap: wrap;     
+}
+
 .side-by-side img {
     flex: 1;          /* image as the first block */ 
     max-width: 100%;
@@ -261,6 +269,7 @@ footer a:hover {
     flex: 1;         /* Text as the first block */
 }
 
+/*
 .facilities {
   display: flex;
   flex-wrap: wrap;
@@ -277,7 +286,7 @@ footer a:hover {
     margin-top: 8px;
     vertical-align: middle;
 }
-
+*/
 
 /* --- MOBILE RESPONSIVENESS (Screens 768px and smaller) - <IS WORKING> experiment for mobile device, sticky header removed --- */
 @media (max-width: 768px) {
